@@ -6,19 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/Users/wrudy/Desktop/ex01/FragTrap.hpp
-iostream
--
-
-/Users/wrudy/Desktop/ex01/ScavTrap.hpp
-iostream
--
-
-/Users/wrudy/Desktop/ex01/main.cpp
-iostream
--
+/Users/wrudy/Desktop/ex01/ScavTrap.cpp
 ScavTrap.hpp
 /Users/wrudy/Desktop/ex01/ScavTrap.hpp
-FragTrap.hpp
-/Users/wrudy/Desktop/ex01/FragTrap.hpp
+
+/Users/wrudy/Desktop/ex01/ScavTrap.hpp
+iostream
+-
 

@@ -18,7 +18,7 @@ private:
 	int melee_attack_damage;
 	int ranged_attack_damage;
 	int armor_damage_reduction;
-	static const std::string quotes[5];
+	static const std::string quotes[3];
 	static const std::string type_of_attack[5];
 	static const std::string type;
 public:

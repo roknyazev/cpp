@@ -92,14 +92,16 @@ ScavTrap &ScavTrap::operator=(const ScavTrap &operand)
 void ScavTrap::rangedAttack(const std::string &target)
 {
 	std::cout << this->type << name << " attacks " << target << " at range, causing "
-			  << ranged_attack_damage << " points of damage!" << std::endl << std::endl;
+			  << ranged_attack_damage << " points of damage!" << std::endl;
+	std::cout << this->type << name << ": " << target << "! " << "Get your ass back here!" << std::endl << std::endl;
 }
 
 
 void ScavTrap::meleeAttack(const std::string &target)
 {
 	std::cout << this->type << name << " attacks " << target << " at melee, causing "
-			  << melee_attack_damage << " points of damage!" << std::endl << std::endl;
+			  << melee_attack_damage << " points of damage!" << std::endl;
+	std::cout << this->type << name << ": It's because you got me mad, " << target << "!" << std::endl << std::endl;
 }
 
 
@@ -141,7 +143,7 @@ void ScavTrap::beRepaired(unsigned int amount)
 void ScavTrap::challengeNewcomer(const std::string &newcomer_name)
 {
 	std::cout << this->type << name << ": * executes DungeonMaster.exe *" << std::endl;
-	std::cout << "FR4G-TP " << name << ": " << "Welcome, " << newcomer_name
+	std::cout << this->type << name << ": " << "Welcome, " << newcomer_name
 	<< "! If you want to get inside the dungeon, you'll have to " << ScavTrap::quotes[rand() % 5]
 	<< std::endl << std::endl;
 }

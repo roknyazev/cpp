@@ -6,13 +6,11 @@
 
 const std::string FragTrap::type = "FR4G-TP ";
 
-const std::string FragTrap::quotes[5] =
+const std::string FragTrap::quotes[3] =
 {
-		"TAAAAA! I am a tornado of death!",
-		"SHAAAAA! I hope it hurts you a lot!",
+		"I am a tornado of death!",
 		"That looks like it hurts!",
-		"Meat confetti!",
-		"Oh god I can't stop!"
+		"Meat confetti!"
 };
 
 const std::string FragTrap::type_of_attack[5] =
@@ -99,14 +97,14 @@ void FragTrap::rangedAttack(const std::string &target)
 {
 	std::cout << this->type << name << " attacks " << target << " at range, causing "
 	<< ranged_attack_damage << " points of damage!" << std::endl;
-	std::cout << std::endl;
+	std::cout << this->type << name << ": Oh god I can't stop!" << std::endl << std::endl;
 }
 
 void FragTrap::meleeAttack(const std::string &target)
 {
 	std::cout << this->type << name << " attacks " << target << " at melee, causing "
 	<< melee_attack_damage << " points of damage!" << std::endl;
-	std::cout << std::endl;
+	std::cout << this->type << name << ": I hope it hurts you a lot!" << std::endl << std::endl;
 }
 
 void FragTrap::takeDamage(unsigned int amount)
@@ -151,7 +149,7 @@ void FragTrap::vaulthunter_dot_exe(const std::string &target)
 		energy_points -= 25;
 		std::cout << this->type << name << " attacks " << target << FragTrap::type_of_attack[rand() % 5] << ", causing "
 				  << rand() % ((melee_attack_damage + ranged_attack_damage) * level) + 1 << " points of damage!" << std::endl;
-		std::cout << this->type << name << ": " << FragTrap::quotes[rand() % 5] << std::endl;
+		std::cout << this->type << name << ": " << FragTrap::quotes[rand() % 3] << std::endl;
 	}
 	else
 	{

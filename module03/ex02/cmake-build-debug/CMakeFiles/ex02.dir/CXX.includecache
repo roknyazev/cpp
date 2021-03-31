@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wrudy/Desktop/ex02/ClapTrap.hpp
+iostream
+/Users/wrudy/Desktop/ex02/iostream
+
+/Users/wrudy/Desktop/ex02/FragTrap.cpp
+FragTrap.hpp
+/Users/wrudy/Desktop/ex02/FragTrap.hpp
+
+/Users/wrudy/Desktop/ex02/FragTrap.hpp
+iostream
+-
+ClapTrap.hpp
+/Users/wrudy/Desktop/ex02/ClapTrap.hpp
+

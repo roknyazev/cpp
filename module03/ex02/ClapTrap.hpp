@@ -15,11 +15,10 @@ protected:
 	int max_energy_points;
 	int level;
 	std::string name;
+	std::string type;
 	int melee_attack_damage;
 	int ranged_attack_damage;
 	int armor_damage_reduction;
-private:
-	static const std::string type;
 public:
 	virtual ~ClapTrap();
 	ClapTrap();

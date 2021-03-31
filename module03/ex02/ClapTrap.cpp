@@ -4,8 +4,6 @@
 
 #include "ClapTrap.hpp"
 
-const std::string ClapTrap::type = "CL4P-TP ";
-
 ClapTrap::~ClapTrap()
 {
 	std::cout << this->type << name << ": "
@@ -14,8 +12,17 @@ ClapTrap::~ClapTrap()
 }
 
 
-ClapTrap::ClapTrap() :	hit_points(100), max_hit_points(100), energy_points(100), max_energy_points(100),
-level(1), name(""), melee_attack_damage(15), ranged_attack_damage(15), armor_damage_reduction(0)
+ClapTrap::ClapTrap() :
+hit_points(100),
+max_hit_points(100),
+energy_points(100),
+max_energy_points(100),
+level(1),
+name("Another useless steward robot"),
+type("CL4P-TP "),
+melee_attack_damage(15),
+ranged_attack_damage(15),
+armor_damage_reduction(0)
 {
 	std::cout << "Building " << this->type << std::endl;
 	std::cout << this->type << name << ": " << "Starting bootup sequence..." << std::endl;
@@ -23,9 +30,16 @@ level(1), name(""), melee_attack_damage(15), ranged_attack_damage(15), armor_dam
 }
 
 
-
-ClapTrap::ClapTrap(std::string &name) : hit_points(100), max_hit_points(100), energy_points(100), max_energy_points(100),
-level(1), melee_attack_damage(15), ranged_attack_damage(15), armor_damage_reduction(0)
+ClapTrap::ClapTrap(std::string &name) :
+hit_points(100),
+max_hit_points(100),
+energy_points(100),
+max_energy_points(100),
+level(1),
+type("CL4P-TP "),
+melee_attack_damage(15),
+ranged_attack_damage(15),
+armor_damage_reduction(0)
 {
 	this->name = name;
 	std::cout << "Building " << this->type << std::endl;
@@ -42,6 +56,7 @@ ClapTrap::ClapTrap(const ClapTrap &copy)
 	max_energy_points = copy.max_energy_points;
 	level = copy.level;
 	name = copy.name;
+	type = copy.type;
 	melee_attack_damage = copy.melee_attack_damage;
 	ranged_attack_damage = copy.ranged_attack_damage;
 	armor_damage_reduction = copy.armor_damage_reduction;
@@ -61,6 +76,7 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &operand)
 	max_energy_points = operand.max_energy_points;
 	level = operand.level;
 	name = operand.name;
+	type = operand.type;
 	melee_attack_damage = operand.melee_attack_damage;
 	ranged_attack_damage = operand.ranged_attack_damage;
 	armor_damage_reduction = operand.armor_damage_reduction;
@@ -72,6 +88,7 @@ void ClapTrap::rangedAttack(const std::string &target)
 {
 	std::cout << this->type << name << " attacks " << target << " at range, causing "
 			  << ranged_attack_damage << " points of damage!" << std::endl;
+	std::cout << this->type << name << ": WOW! I hit 'em!" << std::endl;
 	std::cout << std::endl;
 }
 
@@ -80,6 +97,7 @@ void ClapTrap::meleeAttack(const std::string &target)
 {
 	std::cout << this->type << name << " attacks " << target << " at melee, causing "
 			  << melee_attack_damage << " points of damage!" << std::endl;
+	std::cout << this->type << name << ": Take that!" << std::endl;
 	std::cout << std::endl;
 }
 
@@ -117,3 +135,4 @@ void ClapTrap::beRepaired(unsigned int amount)
 	std::cout << this->type << name << "'s health points" << ": " << hit_points << std::endl;
 	std::cout << std::endl;
 }
+

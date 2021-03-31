@@ -14,7 +14,7 @@ int main()
 	scavTrap.beRepaired(50);
 	scavTrap.beRepaired(500);
 	scavTrap.rangedAttack("Boba");
-	scavTrap.meleeAttack("Biba");
+	scavTrap.meleeAttack("Boba");
 	scavTrap.challengeNewcomer("another victim");
 	scavTrap.takeDamage(150);
 	return 0;

@@ -1,6 +1,7 @@
 #include <iostream>
 #include "ScavTrap.hpp"
 #include "FragTrap.hpp"
+#include "ClapTrap.hpp"
 
 
 int main()
@@ -14,8 +15,8 @@ int main()
 	scavTrap.beRepaired(50);
 	scavTrap.beRepaired(500);
 	scavTrap.rangedAttack("Boba");
-	scavTrap.meleeAttack("Biba");
-	scavTrap.challengeNewcomer("another victim");
+	scavTrap.meleeAttack("Boba");
+	scavTrap.challengeNewcomer("Biba");
 	scavTrap.takeDamage(150);
 	return 0;
 }

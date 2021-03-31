@@ -157,7 +157,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=ex01
+CMAKE_PROJECT_NAME:STATIC=ex02
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ranlib
@@ -229,6 +229,12 @@ ex01_BINARY_DIR:STATIC=/Users/wrudy/Desktop/ex02/cmake-build-debug
 
 //Value Computed by CMake
 ex01_SOURCE_DIR:STATIC=/Users/wrudy/Desktop/ex02
+
+//Value Computed by CMake
+ex02_BINARY_DIR:STATIC=/Users/wrudy/Desktop/ex02/cmake-build-debug
+
+//Value Computed by CMake
+ex02_SOURCE_DIR:STATIC=/Users/wrudy/Desktop/ex02
 
 
 ########################

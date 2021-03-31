@@ -5,36 +5,22 @@
 #ifndef EX01_SCAVTRAP_HPP
 #define EX01_SCAVTRAP_HPP
 #include <iostream>
+#include "ClapTrap.hpp"
 
-class ScavTrap
+class ScavTrap : public ClapTrap
 {
 private:
-	int hit_points;
-	int max_hit_points;
-	int energy_points;
-	int max_energy_points;
-	int level;
-	std::string name;
-	int melee_attack_damage;
-	int ranged_attack_damage;
-	int armor_damage_reduction;
 	static const std::string quotes[5];
-	static const std::string type;
 public:
 	virtual ~ScavTrap();
-
 	ScavTrap();
-
 	ScavTrap(const ScavTrap &copy);
+	ScavTrap(std::string &name);
 
 	ScavTrap &operator=(const ScavTrap &operand);
 
-	ScavTrap(std::string &name);
-
 	void rangedAttack(std::string const & target);
 	void meleeAttack(std::string const & target);
-	void takeDamage(unsigned int amount);
-	void beRepaired(unsigned int amount);
 	void challengeNewcomer(const std::string &newcomer_name);
 };
 
