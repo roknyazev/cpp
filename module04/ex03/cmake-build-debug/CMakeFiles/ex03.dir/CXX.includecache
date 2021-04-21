@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wrudy/Desktop/ex03/AMateria.cpp
+AMateria.hpp
+/Users/wrudy/Desktop/ex03/AMateria.hpp
+ICharacter.hpp
+/Users/wrudy/Desktop/ex03/ICharacter.hpp
+
+/Users/wrudy/Desktop/ex03/AMateria.hpp
+iostream
+-
+
+/Users/wrudy/Desktop/ex03/ICharacter.hpp
+iostream
+-
+
+/Users/wrudy/Desktop/ex03/Ice.cpp
+Ice.hpp
+/Users/wrudy/Desktop/ex03/Ice.hpp
+
+/Users/wrudy/Desktop/ex03/Ice.hpp
+

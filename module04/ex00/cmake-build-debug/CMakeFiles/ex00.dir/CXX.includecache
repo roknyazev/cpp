@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wrudy/Desktop/ex00/Peasant.hpp
+Victim.hpp
+/Users/wrudy/Desktop/ex00/Victim.hpp
+
+/Users/wrudy/Desktop/ex00/Peon.hpp
+Victim.hpp
+/Users/wrudy/Desktop/ex00/Victim.hpp
+
+/Users/wrudy/Desktop/ex00/Sorcerer.hpp
+iostream
+-
+Victim.hpp
+/Users/wrudy/Desktop/ex00/Victim.hpp
+
+/Users/wrudy/Desktop/ex00/Victim.hpp
+iostream
+-
+
+/Users/wrudy/Desktop/ex00/main.cpp
+iostream
+-
+Sorcerer.hpp
+/Users/wrudy/Desktop/ex00/Sorcerer.hpp
+Peon.hpp
+/Users/wrudy/Desktop/ex00/Peon.hpp
+Peasant.hpp
+/Users/wrudy/Desktop/ex00/Peasant.hpp
+
