@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wrudy/Desktop/ex02/Bureaucrat.hpp
+iostream
+-
+
+/Users/wrudy/Desktop/ex02/Form.hpp
+iostream
+/Users/wrudy/Desktop/ex02/iostream
+
+/Users/wrudy/Desktop/ex02/PresidentialPardonForm.hpp
+Form.hpp
+/Users/wrudy/Desktop/ex02/Form.hpp
+
+/Users/wrudy/Desktop/ex02/RobotomyRequestForm.hpp
+Form.hpp
+/Users/wrudy/Desktop/ex02/Form.hpp
+
+/Users/wrudy/Desktop/ex02/ShrubberyCreationForm.hpp
+Form.hpp
+/Users/wrudy/Desktop/ex02/Form.hpp
+fstream
+-
+
+/Users/wrudy/Desktop/ex02/main.cpp
+Form.hpp
+/Users/wrudy/Desktop/ex02/Form.hpp
+Bureaucrat.hpp
+/Users/wrudy/Desktop/ex02/Bureaucrat.hpp
+RobotomyRequestForm.hpp
+/Users/wrudy/Desktop/ex02/RobotomyRequestForm.hpp
+PresidentialPardonForm.hpp
+/Users/wrudy/Desktop/ex02/PresidentialPardonForm.hpp
+ShrubberyCreationForm.hpp
+/Users/wrudy/Desktop/ex02/ShrubberyCreationForm.hpp
+
