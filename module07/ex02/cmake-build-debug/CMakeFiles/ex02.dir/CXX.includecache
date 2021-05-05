@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wrudy/Desktop/ex02/Array.hpp
+iostream
+/Users/wrudy/Desktop/ex02/iostream
+Array.ipp
+/Users/wrudy/Desktop/ex02/Array.ipp
+
+/Users/wrudy/Desktop/ex02/Array.ipp
+
+/Users/wrudy/Desktop/ex02/main.cpp
+iostream
+-
+Array.hpp
+/Users/wrudy/Desktop/ex02/Array.hpp
+
